@@ -46,6 +46,19 @@ body {
   align-items: center;
   position: relative;
 }
+.influencer-details {
+  position: relative;
+  animation-name: header-text;
+  animation-duration: 3s;
+}
+@keyframes header-text {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
 .influencer-details h1 {
   font-size: 50px;
   font-weight: 800;
@@ -72,6 +85,16 @@ body {
   color: var(--button-text-color);
   text-decoration: none;
 }
+.button:hover {
+  background-color: var(--button-text-color);
+  border: 1px solid var(--button-color);
+}
+.button:hover a {
+  color: var(--button-color);
+}
+.button:hover i {
+  color: var(--button-color);
+}
 .arrows {
   font-size: 16px;
   color: var(--button-text-color);
@@ -82,7 +105,18 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+  animation-name: header-photo;
+  animation-duration: 3s;
 }
+@keyframes header-photo {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+
 /* style brand section */
 .container {
   width: 1110px;
