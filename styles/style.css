@@ -74,6 +74,9 @@ body {
 .button {
   width: 196px;
   height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 16px;
   background-color: var(--button-color);
   border: none;
@@ -100,11 +103,8 @@ body {
   color: var(--button-text-color);
   margin-left: 8px;
 }
-.influencer-photo,
-.camera {
-  position: absolute;
-  top: 0;
-  right: 0;
+.influencer-photo {
+  position: relative;
   animation-name: header-photo;
   animation-duration: 3s;
 }
@@ -115,6 +115,9 @@ body {
   100% {
     right: 0%;
   }
+}
+.camera {
+  margin-left: 133px;
 }
 
 /* style brand section */
@@ -247,4 +250,67 @@ body {
   border-radius: 50%;
   margin-right: 15px;
   background-color: #23213c;
+}
+/*responsive mobile Device */
+@media only screen and (max-width: 425px) {
+  .products {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+/* tablet device */
+
+@media only screen and (max-width: 768px) {
+  .header-area {
+    width: 100%;
+    padding: 0 16px 0 16px;
+  }
+  .influencer-details {
+    order: 2;
+  }
+  .influencer-photo {
+    order: 1;
+  }
+  .logo {
+    text-align: center;
+  }
+  .influencer {
+    height: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .influencer-details h1 {
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+  }
+  .influencer-details p {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .button {
+    margin: 0 auto;
+  }
+  .camera {
+    width: 100%;
+    margin-left: 0;
+  }
+  .brand {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .container {
+    width: 100%;
+    padding: 0 16px 0 16px;
+  }
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product-item {
+    width: 100%;
+  }
+  .brand-item {
+    padding: 15px 11px;
+  }
 }
