@@ -82,3 +82,17 @@ body {
   top: 0;
   right: 0;
 }
+/* style brand section */
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+.brand {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  margin-top: 70px;
+  height: 110px;
+  border-top: 1px solid #dee4ec;
+  border-bottom: 1px solid #dee4ec;
+}
