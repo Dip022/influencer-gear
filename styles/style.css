@@ -128,7 +128,7 @@ body {
   margin-top: 16px;
   font-size: 28px;
   line-height: 40px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--primary-color);
 }
 .products-item h2 {
@@ -136,13 +136,14 @@ body {
   font-weight: 500;
   line-height: 40px;
   color: #212121;
+  margin-top: 6px;
 }
 .rating {
   margin-bottom: 15px;
 }
 .rating i {
   color: var(--icon-color);
-  font-size: 12px;
+  font-size: 11px;
 }
 .rating span {
   font-size: 14px;
@@ -162,7 +163,7 @@ body {
   margin-top: 50px;
 }
 .See-More a {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: bold;
   line-height: 24px;
   color: var(--button-color);
